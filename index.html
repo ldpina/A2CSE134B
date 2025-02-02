@@ -1,9 +1,60 @@
 <!DOCTYPE html>
-<html>
-<body>
+<html lang = en>
+    <head>
+        <title>Luis Pina Portfolio</title>
+        <meta charset="UTF-8">
+        <link rel = "stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <style>h1{color: red;}</style>
+        <h1>Luis Pina</h1>
+        <nav>
+            <a href = "https://github.com/ldpina">github</a> |  <a href = "https://www.linkedin.com/in/ldpina/">linkedin</a>
+        </nav>
+        <picture>
+            <img src = "LuispinaLinkedin.png" alt = "Luis Pina" width= "300px" height = "300px"/>
+        </picture>
+        <hr>
+        <h2>Hi I am an aspriring <i>software engineer</i></h2>
 
-<h1>My First Heading</h1>
-<p>My first paragraph.</p>
+        <aside>
+            <h3>About me:</h3>
+            <p id = "about-me"></p>
+            <script>
+                document.getElementById("about-me").innerHTML = "On my free time I love to go outside and explore nature. Here is my favorite picture I took when I travel";
+            </script> 
+            <img src = "hawaiiTrees.JPG" alt = "trees in hawaii" width= "500px" height = "500px"/>
+        </aside>
 
-</body>
+        <section>
+            <header>
+                <h3>Projects</h3>
+            </header>
+            <p>I have compelted two codepath certificates,
+                 one in <strong>Intermediate Web Development</strong> and one in <strong>Intermediate Techinical Interview Prep</strong>.
+                 From these course I was able to create <b>2</b> main projects on the side. <em>RoamMates</em> and <em>fitpal</em>
+                 are the titles of them. Prior to taking my CSE 134B class I would always try to <code>div</code> everything out.
+            </p>
+        </section>
+
+        <pre>
+           But I have definitely learned
+           from my mistaks and now am ready to create projects  
+           without so many divs! I am also learning how to add 
+
+           components to websites   that are used in the real world!
+        </pre>
+
+        <iframe src="demo-iframe.html" height="200px" width="400px" title="Iframe Example"></iframe>
+
+        <div></div>
+        <span></span>
+
+
+    </body>
+    <br/>
+    <footer>
+        <h3>Contact me:</h3>
+        <textarea></textarea>
+    </footer>
 </html>
