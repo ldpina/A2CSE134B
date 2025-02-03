@@ -6,7 +6,6 @@
         <link rel = "stylesheet" href = "styles.css">
     </head>
     <body>
-        <style>h1{color: red;}</style>
         <h1>Luis Pina</h1>
         <nav>
             <a href = "https://github.com/ldpina">github</a> |  <a href = "https://www.linkedin.com/in/ldpina/">linkedin</a>
@@ -19,12 +18,64 @@
 
         <aside>
             <h3>About me:</h3>
-            <p id = "about-me"></p>
-            <script>
-                document.getElementById("about-me").innerHTML = "On my free time I love to go outside and explore nature. Here is my favorite picture I took when I travel";
-            </script> 
-            <img src = "hawaiiTrees.JPG" alt = "trees in hawaii" width= "500" height = "500"/>
+            <p>On my free time I love to go outside and explore nature. Here is my favorite picture I took when I traveled to hawaii</p>
+            <details>
+                <summary>Hawaii Picture</summary>
+                <figure>
+                    <img src = "hawaiiTrees.JPG" alt = "trees in hawaii" width= "500" height = "500"/>      
+                    <figcaption>Fig.1 - Picture taken at <cite>Mānoa Falls Trail</cite></figcaption>
+                  </figure>             
+              </details>
+
         </aside>
+        <br/>
+
+        <h3>My favorite quote is</h3>
+
+        <blockquote cite="https://en.wikipedia.org/wiki/If_Not_Now,_When%3F">
+            If not now,  when?
+        </blockquote>
+        <hr>
+        <hgroup>
+            <h2>Techinical Expreince</h2>
+            <p>Over the past few years of college this what I am currently my stats</p>
+        </hgroup>
+
+
+        <table style="border:1px solid black">
+            <caption>Languages I used in College</caption>
+
+            <colgroup>
+                <col span="2" style="background-color:yellow">
+                <col style="background-color:greenyellow">
+              </colgroup>
+
+            <tr>
+              <th>Languages</th>
+              <th></th>
+              <th>Years of exprience</th>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Java</td>
+                <td></td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td><dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn></td>
+                <td></td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td><dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn></td>
+                <td></td>
+                <td>2</td>
+            </tr>
+          </table>
 
         <section>
             <header>
@@ -40,21 +91,135 @@
         <pre>
            But I have definitely learned
            from my mistaks and now am ready to create projects  
-           without so many divs! I am also learning how to add 
+           without so many <del>divs!</del> I am also learning how to add 
 
-           components to websites   that are used in the real world!
+           components to websites   that are used in the <ins>real world!</ins>
         </pre>
 
         <iframe src="demo-iframe.html" height="200" width="400" title="Iframe Example"></iframe>
+        <dialog open>popups for users</dialog>
 
-        <div></div>
+        <form>
+            <fieldset>
+                <legend>Contact Me:</legend>
+                <label for="fname">First name:</label><br>
+                <input type="text" id="fname" name="fname" value=""><br>
+
+                <label for="lname">Last name:</label><br>
+                <input type="text" id="lname" name="lname" value=""><br>
+
+                <label for="email">Email:</label><br>
+                <input type="text" id="email" name="email" value=""><br>
+
+                <label for="projects">What project caught your eye:</label><br>
+                <input list="projects" id="project">
+                <datalist id="projects">
+                    <option value="FitPal">
+                    <option value="RoamMates">
+                    <option value="all of them">
+                </datalist><br/>
+
+                <label for="language">What language would you like to communicate in:</label><br/>
+                <select  id="language">
+                    <optgroup label="Languages">
+                        <option value="english">English</option>
+                        <option value="spanish">Spanish</option>
+                    </optgroup>
+                </select><br/>
+
+                <label for="inquiry">Reason for Contact:</label><br>
+                <textarea id="inquiryInfo" name="inquiryInfo" rows="4" cols="30" placeholder="type here..."></textarea>
+                <br/>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
+        <br/>
+
         <span></span>
+        <hr>
 
+        <address>
+            Written by Luis Pina.
+            <br> 
+            Visit my storefront:
+            <br>
+            luispina.com
+            <br>
+            2023 Commerce Rd, Los Angeles
+            <br>
+            USA
+            </address>
 
+        <br><br/>
     </body>
-    <br><br/>
     <footer>
-        <h3>Contact me:</h3>
-        <textarea></textarea>
+        <h2>This is the lab section</h2>
+
+        <div>
+
+            <h3>Types of Lists</h3>
+            <ul>
+                <li>unordered item</li>
+                <li>unordered item</li>
+                <li>unordered item</li>
+            </ul>
+
+            
+            <ol>
+                <li>ordered item</li>
+                <li>ordered item</li>
+                <li>ordered item</li>
+            </ol>
+
+            <search>
+                <form>
+                  <input id="fsrch" placeholder="Search bar">
+                </form>
+            </search>
+
+            <video width="400" controls>
+                <source src="chimpZoom.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+            <br/>
+            <audio controls>
+                <source src = "AudioChimps.mp3" type = "audio/mpeg">
+                Your brower does not support the audio element
+            </audio>
+            <br/>
+            <canvas id="canvas" width="100" height="100">
+                Your browser does not support the HTML canvas tag.
+            </canvas>
+            <script>
+                var c = document.getElementById("canvas");
+                var context = c.getContext("2d");
+                context.moveTo(0, 0);
+                context.lineTo(100, 100);
+                context.stroke();
+            </script>
+            <noscript>This element is usally suppose have a yellow line it. RIP turn on JSS</noscript>
+
+            <svg width="100" height="100">
+                <circle cx="50" cy="25" r="40" stroke="orange" stroke-width="6" fill="yellow" />
+            </svg>
+            <button type="button" onclick="alert('Hello')">I am a button</button>
+        </div>
+
+        <h3> Here is a descriptive list</h3>
+        <dl>
+            <dt><ins>Pizza</ins></dt>
+            <dd>contains dairy</dd>
+            <dt><ins>Spagetti With Meatballs</ins></dt>
+            <dd>contains gluten</dd>
+        </dl>
+
+        <h3>Favorite Keyboard Command <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd></h3>
+
+        <template>
+            <h2>Demo of a template</h2>
+            <p>fun!</p>
+        </template>
+
+
     </footer>
 </html>
